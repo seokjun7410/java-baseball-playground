@@ -42,4 +42,8 @@ public class BaseBallGameManager {
 
         return 0;
     }
+
+    public boolean isFinish(int strikeCount) {
+        return this.numberSize == strikeCount;
+    }
 }
