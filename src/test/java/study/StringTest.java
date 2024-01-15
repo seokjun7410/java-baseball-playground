@@ -27,4 +27,14 @@ public class StringTest {
         assertThat(substring).isEqualTo("1,2");
     }
 
+    @Test
+    void charAt() {
+        String str = "abc";
+
+        assertThatThrownBy(() -> {
+            str.charAt(3);
+        }).isInstanceOf(StringIndexOutOfBoundsException.class)
+                .hasMessageContaining("String index out of range: 3");
+    }
+
 }
