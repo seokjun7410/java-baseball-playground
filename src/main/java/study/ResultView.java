@@ -16,6 +16,6 @@ public class ResultView {
                     .append(strikeCount).append("스트라이크");
 
 
-        System.out.print(stringBuilder);
+        System.out.println(stringBuilder);
     }
 }
