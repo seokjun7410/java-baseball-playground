@@ -20,4 +20,11 @@ public class StringTest {
         assertThat(split[1]).isEqualTo("2");
     }
 
+    @Test
+    void substring() {
+        String str = "(1,2)";
+        String substring = str.substring(1, 4);
+        assertThat(substring).isEqualTo("1,2");
+    }
+
 }
